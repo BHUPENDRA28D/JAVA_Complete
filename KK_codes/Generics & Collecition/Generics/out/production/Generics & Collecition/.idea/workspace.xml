@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6bc661ec-105d-452f-9394-e859dd2eabf1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/Assignment 18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Assignments/Assignment 18/world/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/out/production/27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/28_Exception_Handeling/28_Exception_Handeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/28_Exception_Handeling/ArrOfObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/28_Exception_Handeling/out/production/28_Exception_Handeling/28_Exception_Handeling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/29_Threading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/files/myData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/out/production/29_Threading/.idea/29_Threading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/world/AdditionFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/world/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live  Programs/29_Threading/world/FileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/src/DBC/Conect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/src/DBC/DatabaseConnection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Programs/Live Programs/DatabaseConnection/src/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/Searching_Sorting/.idea/Searching_Sorting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/Searching_Sorting/SearchSortPackage/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/Searching_Sorting/SearchSortPackage/PostionInInfinteArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/Searching_Sorting/SearchSortPackage/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/Searching_Sorting/out/production/Searching_Sorting/.idea/Searching_Sorting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/com/kk/ArrayADT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/com/kk/ArrayList_Tut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/com/kk/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/com/kk/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/com/kk/Searching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arrays/out/production/Arrays/.idea/Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Enums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Heaping/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Heaping/HeapClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/LearinMaps/LearnMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/LearnComparableAndComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/LearnSets/LearnSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/LearningQueue/ArrayDequeClas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/LearningQueue/LearnQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/ListLearnings/LearnList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/ListLearnings/ListMore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/ListLearnings/StackColleciton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Collections/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/LinkedList/CLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/LinkedList/DLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/LinkedList/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/LinkedList/SLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/LinkedList/SLLKK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Queue/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Queue/QueueArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Queue/QueueLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Queue/QueueUsingStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Stack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Stack/StackArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/TicTacTao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/Tree/TreeDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/ColneObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/CustArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/CustomArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics/Obj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loops/Loops.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loops/com/tutorial/Fabinacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loops/com/tutorial/Largest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loops/com/tutorial/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loops/out/production/Loops/Loops.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Patter_Problem/.idea/Patter_Problem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Patter_Problem/kkJava/Pattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Patter_Problem/out/production/Patter_Problem/.idea/Patter_Problem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Recursion/.idea/Recursion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Recursion/kkRecursion/RecursionArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Recursion/kkRecursion/Recursion_Pattern_Sorts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Recursion/out/production/Recursion/.idea/Recursion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sorting/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sorting/Searching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sorting/SortingAlgos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings &amp; StringBuilder/.idea/Strings &amp; StringBuilder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings &amp; StringBuilder/kkString/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings &amp; StringBuilder/kkString/Output.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings &amp; StringBuilder/out/production/Strings &amp; StringBuilder/.idea/Strings &amp; StringBuilder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MySirg Practise DSA/DSA/SLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MySirg Practise DSA/DSA/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MySirg Practise DSA/Generics/Coll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MySirg Practise DSA/Generics/ListInterface/LearnList.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qyvkZr8u5ZN7cVPv6Iw3QpUxnp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ArrayDequeClas.executor": "Run",
+    "Application.CustArray.executor": "Run",
+    "Application.CustomArrayList.executor": "Run",
+    "Application.Driver.executor": "Run",
+    "Application.Enums.executor": "Run",
+    "Application.LearnComparableAndComparator.executor": "Run",
+    "Application.LearnList.executor": "Run",
+    "Application.LearnMap.executor": "Run",
+    "Application.LearnQueue.executor": "Run",
+    "Application.LearnSet.executor": "Run",
+    "Application.ListMore.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.QueueUsingStack.executor": "Run",
+    "Application.StackColleciton.executor": "Run",
+    "Application.TreeDriver.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/JAVA/KK_codes/Generics & Collecition"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JAVA\KK_codes\Generics &amp; Collecition\Generics" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LearnComparableAndComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.LearnComparableAndComparator" />
+      <module name="Generics &amp; Collecition" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LearnComparableAndComparator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bc661ec-105d-452f-9394-e859dd2eabf1" name="Changes" comment="" />
+      <created>1735647772976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735647772976</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/DSA/LinkedList/SLLKK.java</url>
+          <line>92</line>
+          <properties class="DSA.LinkedList.SLLKK" method="deleteFirst">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSA/LinkedList/SLL.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

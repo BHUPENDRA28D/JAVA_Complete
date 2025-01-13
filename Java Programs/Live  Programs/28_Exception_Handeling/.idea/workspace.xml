@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f56f289-e547-4f3a-b4c8-eb63184d362d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_FunctionalIntrerface_lambdaExpression/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../27_FunctionalIntrerface_lambdaExpression/out/production/27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArrOfObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/DatabaseConnection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/src/Conectt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Live Programs/DatabaseConnection/src/Connectt.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2kSPETjL4fwW8StvGEOgQlS0qq2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArrOfObj.executor": "Run",
+    "Application.Example.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/JAVA/Java Programs/Live  Programs/29_Threading"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f56f289-e547-4f3a-b4c8-eb63184d362d" name="Changes" comment="" />
+      <created>1723273893331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723273893331</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Example.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
