@@ -1,5 +1,7 @@
 package DSA.Tree;
 
+import org.w3c.dom.Element;
+
 public class BinaryTree {
 
     class Node {
@@ -136,7 +138,140 @@ public class BinaryTree {
         // Recurse to the left and right subtrees with updated prefixes
         displayTree(root.left, prefix + (isLeft ? "│   " : "    "), true);
         displayTree(root.right, prefix + (isLeft ? "│   " : "    "), false);
+
+
     }
+
+
+//    public void deleteNode(int data){
+//
+//
+//        Node ptr ,parptr;
+//        if(isEmpty())
+//             System.out.println("Tree is Empty");
+//
+//        ptr =root;
+//        while(ptr !=null){
+//            if(ptr.item ==data)
+//                break;
+//            if(data<ptr){
+//                parptr =ptr;
+//                ptr =ptr.left;
+//            }
+//
+//            else {
+//
+//                parptr =ptr;
+//                ptr = ptr.right;
+//            }
+//        }
+//        if(ptr == null){
+//            System.out.println("Data not found");
+//        }
+//
+//        if(parptr ==null & ptr!=null){//root node to be deleted
+//            if(ptr.left ==null && ptr.right ==null)
+//                root =null;
+//
+//            else if (ptr.left && ptr.right){
+//
+//                //two children
+//                Node suc,parentSuc;
+//                suc = ptr.right;
+//                parentSuc =ptr;
+//                while (suc.left!=null){
+//                    parentSuc=suc;
+//                    suc=suc.left;
+//                }
+//                ptr.item=suc.item;
+//                //now delete sucessor
+//
+//                if(suc == parentSuc.left)
+//                    parentSuc.left=suc.right;
+//                else
+//                    parentSuc.right=suc.right;
+//                delete suc;
+//
+//
+//
+//            }
+//
+//
+//           else{// ONE CHILD
+//
+//                if(ptr.left){
+//                    root =ptr.left;
+//                }
+//                else{
+//                    root = ptr.right;
+//                }
+//
+//            }
+//
+//        }
+//
+//        else{   //node to be deleted is not a root node.
+//
+//            if(ptr.left ==null && ptr.right ==null) //no child
+//            {
+//                if(ptr == parptr.left){
+//                    parptr.left =null;
+//                    delete ptr;
+//                }
+//                else{
+//                    parptr.right =null;
+//                    delete ptr;
+//
+//                }
+//            }
+//
+//            else if(ptr.left && ptr.right) // two child.
+//            {
+//                Node suc,parentSuc;
+//                suc = ptr.right;
+//                parentSuc =ptr;
+//                while (suc.left!=null){
+//                    parentSuc=suc;
+//                    suc=suc.left;
+//                }
+//                ptr.item=suc.item;
+//                //now delete sucessor
+//
+//                    if(suc == parentSuc.left)
+//                        parentSuc.left=suc.right;
+//                    else
+//                        parentSuc.right=suc.right;
+//                    delete suc;
+//
+//
+//            }
+//
+//            }
+//            else {
+//                if(ptr == parptr.left){
+//                    if(ptr.left)
+//                    parptr.left =ptr.left;
+//                    else
+//                        parptr.left=parptr.right;
+//                    delete ptr;
+//                }
+//                else{
+//                    p if(ptr == parptr.left){
+//                        if(ptr.left)
+//                            parptr.right =ptr.left;
+//                        else
+//                            parptr.right=parptr.right;
+//                        delete ptr;
+//
+//                }
+//
+//            }
+//
+//        }
+//    }
+
+
+
 
     public void deleteNode(int key) {
         root = deleteRec(root, key);
