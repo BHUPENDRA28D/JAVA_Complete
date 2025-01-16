@@ -1,0 +1,12 @@
+1. Professional App Configurations
+      1.Create new Project, Setup Professional Folder Structure
+      2. Light & Dark Theme Setup, includes buttons, textfields, appbar, chip, and few others.
+      3. Create Helper Functions, Constants, & Utility Classes
+
+
+2.    LOGIN / REGISTRATION Ul UX
+   Native Splash Screen
+3 OnBoarding Screens
+Register Screen with Email Verification & Success Screen
+Login Screen
+Forget Password & Reset Password
