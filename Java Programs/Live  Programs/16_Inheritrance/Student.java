@@ -1,6 +1,8 @@
-package inhit;
+package  inhit;
 
-public class Student extends Person{
+public class Student extends inhit.Person {
+
+
    private int rollno;
 //    private String name;
 
