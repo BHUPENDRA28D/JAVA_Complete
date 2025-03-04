@@ -11,5 +11,11 @@ public class Main {
         singlyLinkedList.insertAtStart(18);
 
         singlyLinkedList.showList();
+
+        singlyLinkedList.insertAtEnd(33);
+        singlyLinkedList.insertAtEnd(645);
+
+        singlyLinkedList.showList();
+
     }
 }
