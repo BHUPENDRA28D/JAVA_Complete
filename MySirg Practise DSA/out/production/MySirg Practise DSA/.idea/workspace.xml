@@ -4,74 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d42fffe8-09e0-4c49-a52b-bdf56a90522e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/Assignment 18.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Assignments/Assignment 18/world/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/27_FunctionalIntrerface_lambdaExpression/out/production/27_FunctionalIntrerface_lambdaExpression/.idea/27_FunctionalIntrerface_lambdaExpression.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/28_Exception_Handeling/28_Exception_Handeling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/28_Exception_Handeling/ArrOfObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/28_Exception_Handeling/out/production/28_Exception_Handeling/28_Exception_Handeling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/29_Threading.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/files/myData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/out/production/29_Threading/.idea/29_Threading.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/world/AdditionFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/world/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live  Programs/29_Threading/world/FileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/src/DBC/Conect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/src/DBC/DatabaseConnection.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java Programs/Live Programs/DatabaseConnection/src/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/Arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/Searching_Sorting/.idea/Searching_Sorting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/Searching_Sorting/SearchSortPackage/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/Searching_Sorting/SearchSortPackage/PostionInInfinteArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/Searching_Sorting/SearchSortPackage/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/Searching_Sorting/out/production/Searching_Sorting/.idea/Searching_Sorting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/com/kk/ArrayADT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/com/kk/ArrayList_Tut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/com/kk/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/com/kk/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/com/kk/Searching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Arrays/out/production/Arrays/.idea/Arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Loops/Loops.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Loops/com/tutorial/Fabinacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Loops/com/tutorial/Largest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Loops/com/tutorial/Reverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Loops/out/production/Loops/Loops.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Patter_Problem/.idea/Patter_Problem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Patter_Problem/kkJava/Pattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Patter_Problem/out/production/Patter_Problem/.idea/Patter_Problem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Recursion/.idea/Recursion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Recursion/out/production/Recursion/.idea/Recursion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Strings &amp; StringBuilder/.idea/Strings &amp; StringBuilder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Strings &amp; StringBuilder/kkString/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Strings &amp; StringBuilder/kkString/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KK_codes/Strings &amp; StringBuilder/out/production/Strings &amp; StringBuilder/.idea/Strings &amp; StringBuilder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSA/SLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSA/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generics/Coll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generics/ListInterface/LearnList.java" afterDir="false" />
+    <list default="true" id="0a9a923d-55ec-467e-ba8f-34fa842567c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Trees/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,24 +33,20 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.LearnList.executor&quot;: &quot;Run&quot;,
     &quot;Application.SLL.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/JAVA/MySirg Practise DSA&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/JAVA/KK_codes/Sorting&quot;
   }
 }</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d42fffe8-09e0-4c49-a52b-bdf56a90522e" name="Changes" comment="" />
+      <changelist id="0a9a923d-55ec-467e-ba8f-34fa842567c2" name="Changes" comment="" />
       <created>1734854226644</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
