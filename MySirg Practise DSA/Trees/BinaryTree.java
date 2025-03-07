@@ -17,18 +17,17 @@ public class BinaryTree {
     private Node root;
 
     // Insert elements
-    public void insert(int data) {
+    public void insert(Scanner scanner) {
         // Insert logic here
-    }
-
-    // Populate
-    public void populate(Scanner scanner) {
         System.out.println("Enter the root Node: ");
         int data = scanner.nextInt();
         root = new Node(data);
 
         populate(scanner, root);
     }
+
+    // Populate
+
 
     private void populate(Scanner scanner, Node node) {
         System.out.println("Do you want to enter left of " + node.item);
@@ -89,7 +88,7 @@ public class BinaryTree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BinaryTree bt = new BinaryTree();
-        bt.populate(sc);
+        bt.insert(sc);
         bt.display();
     }
 }
