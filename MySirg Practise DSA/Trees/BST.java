@@ -1,5 +1,7 @@
 package Trees;
 
+import java.util.Scanner;
+
 public class BST {
 
     public   class Node {
@@ -28,8 +30,20 @@ public class BST {
 
 
 
-    public void insert(int data){
+    public void insert(){
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of elements to insert in BST:");
+        int n = sc.nextInt();
+
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            int data = sc.nextInt();
+            root = insert(data, root);  // Insert each value
+        }
+
+        sc.close(); // Close scanner
     }
 
     private Node insert(int data,Node node){
@@ -41,15 +55,48 @@ public class BST {
             node.left= insert(data,node.left);
         }
 
-        else if(data <node.item){
-            node.right= insert(data,node.right);
+        else if(data > node.item) {
+            node.right = insert(data, node.right);
         }
+
         else{
         System.out.println("Duplicate value " + data + " not allowed in BST.");
-        return null;
+        return node;
         }
 
         node.height = Math.max(getHeight(node.left),getHeight(node.right)+1);
         return node;
+    }
+
+
+    //Display method
+    public void display() {
+        printTree(root, 0);
+    }
+
+    private void printTree(Node node, int level) {
+        if (node == null) {
+            return;
+        }
+
+        printTree(node.right, level + 1);
+        if (level != 0) {
+            for (int i = 0; i < level - 1; i++)
+                System.out.print("|\t");
+            System.out.println("|-------" + node.item);
+        } else
+            System.out.println(node.item);
+        printTree(node.left, level + 1);
+    }
+
+
+    // main
+    public static void main(String[] args) {
+
+        BST bst = new BST();
+
+        System.out.println("BST Structure :--");
+        bst.insert();
+        bst.display();
     }
 }
