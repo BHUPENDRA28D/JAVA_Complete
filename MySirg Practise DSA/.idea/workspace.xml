@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a923d-55ec-467e-ba8f-34fa842567c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Trees/AVL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/AVL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/AVL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

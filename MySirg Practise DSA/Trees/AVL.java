@@ -33,8 +33,74 @@ public class AVL {
             return (n==null)?0:getHeight(n.left)-getHeight(n.right);
        }
 
-       //
-       // Insert a node into AVL tree
+       //Rotate code
+
+
+      private   Node rotate(Node node){
+
+            if((getHeight(node.left)-getHeight(node.right)>1)){
+                // left heavy
+
+              if(getHeight(node.left.left)- getHeight(node.left.right) >0){
+                  //left-left case
+                  return rightRotate(node);
+              }
+
+
+             if(getHeight(node.left.left)- getHeight(node.left.right) <0){
+              //left-right case
+              node.left = leftRotate(node.left);
+              return rightRotate(node);
+          }}
+
+          if((getHeight(node.left)-getHeight(node.right))>1){
+              // right heavy
+
+              if(getHeight(node.right.left)- getHeight(node.right.right) >0){
+                  //right-right case
+                  return leftRotate(node);
+              }
+
+
+              if(getHeight(node.right.left)- getHeight(node.right.right) <0){
+                  //left-right case
+                  node.right = rightRotate(node.right);
+                  return rightRotate(node);
+              }}
+
+        return  node;
+      }
+
+      //Right Rotation.
+    private Node rightRotate(Node p) {
+            Node c = p.left;
+            Node t = c.right;
+
+            c.right = p;
+            p.left = t;
+
+            p.height = Math.max(getHeight(p.left),getHeight(p.right)+1);
+            c.height = Math.max(getHeight(c.left),getHeight(c.right)+1);
+
+            return c;
+    }
+
+ //Left Rotation.
+    private Node leftRotate(Node c) {
+            Node p =c.right ;
+            Node t = p.left;
+
+            p.left = c;
+            c.right=t;
+
+            p.height = Math.max(getHeight(p.left),getHeight(p.right)+1);
+            c.height = Math.max(getHeight(c.left),getHeight(c.right)+1);
+
+            return c;
+    }
+
+
+    // Insert a node into AVL tree
        public void insert(int item) {
            root = insert(root, item);
        }
@@ -55,7 +121,7 @@ public class AVL {
 
         // Update height
         node.height = Math.max(getHeight(node.left), getHeight(node.right)) + 1;
-        return node;  // Return unchanged node
+        return rotate(node);  // Return unchanged node
 
     }
 
