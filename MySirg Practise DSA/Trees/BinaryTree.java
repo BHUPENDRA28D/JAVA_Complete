@@ -1,6 +1,6 @@
 package Trees;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class BinaryTree {
 
@@ -15,6 +15,9 @@ public class BinaryTree {
     }
 
     private Node root;
+    public Node getRoot(){
+        return root;
+    }
 
     // Insert elements
     public void insert(Scanner scanner) {
@@ -85,10 +88,53 @@ public class BinaryTree {
     }
 
 
+
+
+    //Breadth First Search BSF (Level Order Triversal). LeetCode 102.
+
+    public List<List<Integer>> levelOrder(Node root) {
+
+        List<List<Integer>> result = new ArrayList<>();
+
+        if(root == null){
+            return  result;
+        }
+
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();
+
+            List<Integer> current_level = new ArrayList<>();
+            for (int i =0;i<levelSize;i++){
+                Node currentNode = queue.poll();
+                current_level.add(currentNode.item);
+
+                if(currentNode.left !=null){
+                    queue.offer(currentNode.left);
+                }
+                if(currentNode.right !=null){
+                    queue.offer(currentNode.right);
+                }
+
+            }
+            result.add(current_level);
+        }
+
+        return result;
+    }
+
+
+    // Avrage on each level of node. Leetcode 637
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BinaryTree bt = new BinaryTree();
         bt.insert(sc);
         bt.display();
+        System.out.println(bt.levelOrder(bt.getRoot()));
     }
 }

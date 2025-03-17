@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a923d-55ec-467e-ba8f-34fa842567c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/StringBuffer/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/AVL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/AVL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,7 @@
     &quot;Application.BST.executor&quot;: &quot;Run&quot;,
     &quot;Application.BinaryTree.executor&quot;: &quot;Run&quot;,
     &quot;Application.LearnList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.SLL.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
