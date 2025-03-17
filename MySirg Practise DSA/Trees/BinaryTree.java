@@ -51,6 +51,27 @@ public class BinaryTree {
             populate(scanner, node.right);
         }
     }
+
+
+
+    // Function to create the tree automatically
+    public void createTree() {
+        root = new Node(3);
+        root.left = new Node(4);
+        root.right = new Node(8);
+
+        root.left.left = new Node(12);
+        root.left.right = new Node(14);
+
+        root.left.right.left = new Node(36);
+        root.left.right.right = new Node(9);
+
+        root.right.left = new Node(7);
+        root.right.right = new Node(11);
+
+        root.right.right.left = new Node(2);
+        root.right.right.left.right = new Node(44);
+    }
 /*
     // Display function
     public void display() {
@@ -167,12 +188,57 @@ public class BinaryTree {
     }
 
 
+    //Right next node item google question.
+    public Node findSuccessor(Node root, int key){
+
+        if(root == (null)){
+            return null;
+        }
+
+        Queue<Node> q =new LinkedList<>();
+        q.offer(root);
+
+        while (!q.isEmpty()){
+
+            Node cn = q.poll();
+
+            if(cn.left!=null){
+                q.offer(cn.left);
+            }
+            if(cn.right!=null){
+                q.offer(cn.right);
+            }
+
+            if(cn.item==key){
+                break;
+            }
+
+        }
+
+
+        return q.peek();
+
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BinaryTree bt = new BinaryTree();
-        bt.insert(sc);
+//        bt.insert(sc);
+        bt.createTree();
         bt.display();
         System.out.println(bt.levelOrder(bt.getRoot()));
         System.out.println("\n"+bt.averageOfLevels(bt.getRoot()));
+
+
+        //findsuccessor
+        Node successor = bt.findSuccessor(bt.getRoot(), 14);
+        if (successor != null) {
+            System.out.println("\nSuccessor of 14: " + successor.item);
+        } else {
+            System.out.println("\nNo successor found.");
+        }
+
+
     }
 }
