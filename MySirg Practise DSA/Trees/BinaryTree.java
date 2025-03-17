@@ -127,7 +127,44 @@ public class BinaryTree {
     }
 
 
-    // Avrage on each level of node. Leetcode 637
+    // Avrage on each level of node. Leetcode- 637
+
+    public List<Double> averageOfLevels(Node root) {
+
+        List<Double> avg = new ArrayList<>();
+
+        if(root.equals(null)){
+            return avg;
+        }
+
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+
+        while(!q.isEmpty()){
+
+            int levelSize = q.size();
+            double sum =0;
+
+            for(int i =0;i<levelSize;i++){
+                Node currentNode = q.poll();
+                sum+=currentNode.item;
+
+                if(currentNode.left!=null){
+                    q.offer(currentNode.left);
+                }
+                if(currentNode.right !=null){
+                    q.offer(currentNode.right);
+                }
+
+            }
+
+            avg.add(sum/levelSize);
+        }
+
+
+
+        return avg;
+    }
 
 
     public static void main(String[] args) {
@@ -136,5 +173,6 @@ public class BinaryTree {
         bt.insert(sc);
         bt.display();
         System.out.println(bt.levelOrder(bt.getRoot()));
+        System.out.println("\n"+bt.averageOfLevels(bt.getRoot()));
     }
 }
