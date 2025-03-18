@@ -56,6 +56,11 @@ public class BinaryTree {
 
     // Function to create the tree automatically
     public void createTree() {
+   /*     root =new Node(3);
+        root.left = new Node(9);
+        root.right = new Node(20);
+        root.right.left = new Node(15);
+        root.right.right = new Node(7);*/
         root = new Node(3);
         root.left = new Node(4);
         root.right = new Node(8);
@@ -219,6 +224,57 @@ public class BinaryTree {
         return q.peek();
 
     }
+    // zig zig treversal -LeetCode -103 Google ,amaone ,meta.
+    public List<List<Integer>> zigzagLevelOrder(Node root) {
+
+        List<List<Integer>> result = new ArrayList<>();
+
+        if(root == null){
+            return  result;
+        }
+
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
+
+        int level =0;
+        while(!queue.isEmpty()){
+            int levelSize = queue.size();
+            level++;
+
+            List<Integer> current_level = new ArrayList<>();
+            for (int i =0;i<levelSize;i++){
+                Node currentNode = queue.poll();
+                current_level.add(currentNode.item);
+
+                if(level%2==0){
+                 if(currentNode.left !=null)
+                    queue.offer(currentNode.left);
+
+                 if(currentNode.right !=null)
+                    queue.offer(currentNode.right);
+
+                }
+                else if(level%2!=0){
+
+                    if(currentNode.right !=null)
+                        queue.offer(currentNode.right);
+
+                    if(currentNode.left !=null)
+                        queue.offer(currentNode.left);
+
+
+
+                }
+
+            }
+            result.add(current_level);
+        }
+
+        return result;
+
+
+    }
 
 
     public static void main(String[] args) {
@@ -230,7 +286,11 @@ public class BinaryTree {
         System.out.println(bt.levelOrder(bt.getRoot()));
         System.out.println("\n"+bt.averageOfLevels(bt.getRoot()));
 
+        System.out.println("\n"+bt.zigzagLevelOrder(bt.getRoot()));
 
+
+
+/*
         //findsuccessor
         Node successor = bt.findSuccessor(bt.getRoot(), 14);
         if (successor != null) {
@@ -238,6 +298,7 @@ public class BinaryTree {
         } else {
             System.out.println("\nNo successor found.");
         }
+*/
 
 
     }
