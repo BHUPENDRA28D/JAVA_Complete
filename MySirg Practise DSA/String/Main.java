@@ -1,4 +1,4 @@
-package StringBuffer;
+package String;
 
 public class Main {
 

@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a9a923d-55ec-467e-ba8f-34fa842567c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Leetcode/Arrays/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/Operater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/PrettyPrinting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/String01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/String02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/String03Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String/String04Methodes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/Trees/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringBuffer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/String/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MySirg Practise DSA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MySirg Practise DSA/StringBuffer/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +46,14 @@
     &quot;Application.BinaryTree.executor&quot;: &quot;Run&quot;,
     &quot;Application.LearnList.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Operater.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrettyPrinting.executor&quot;: &quot;Run&quot;,
     &quot;Application.SLL.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;Application.String01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.String02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.String03Builder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.String04Methodes.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -48,7 +63,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BST" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Trees.BST" />
       <module name="MySirg Practise DSA" />
       <extension name="coverage">
@@ -61,11 +76,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BST" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
