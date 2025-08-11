@@ -3,6 +3,11 @@ package ArrayList;
 import javax.print.attribute.standard.NumberOfInterveningJobs;
 import java.util.*;
 
+
+
+
+
+
 public class Main2 {
 
     public static void main(String[] args) {
@@ -58,6 +63,7 @@ public class Main2 {
         //sorting list;
 //        Collections.sort(intList);
 //        List.sort(intList);   not work here.
+
 
         System.out.println(intList);
 
