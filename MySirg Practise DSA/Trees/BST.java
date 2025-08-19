@@ -99,4 +99,7 @@ public class BST {
         bst.insert();
         bst.display();
     }
+
+
+
 }

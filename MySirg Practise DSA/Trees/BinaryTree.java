@@ -1,5 +1,204 @@
 package Trees;
 
+import java.util.Scanner;
+
+public class BinaryTree{
+
+    private static class Node{
+
+        int value;
+        Node left;
+        Node right;
+
+        public Node (int value){
+            this.value =value;
+        } }
+
+
+    private Node root;
+
+    public void insert(Scanner sc){
+        System.out.println("Enter the root item :");
+        int data = sc.nextInt();
+        root = new Node(data);
+        populate(sc,root);
+
+    }
+
+    private void populate(Scanner sc, Node node){
+        System.out.println("Do you want to enter left of "+ node.value);
+        boolean left = trueFalse(sc);
+
+        if(left){
+            System.out.println("Enter value to left of "+node.value);
+            node.left = new Node(sc.nextInt());
+            populate(sc,node.left);
+        }
+        System.out.println("Do you want to enter right of "+ node.value);
+        boolean right= trueFalse(sc);
+        if(right){
+            System.out.println("Enter value to right of "+node.value);
+            node.right = new Node(sc.nextInt());
+            populate(sc,node.right);
+        }
+
+    }
+
+    private boolean trueFalse(Scanner sc){
+        String x = sc.next().trim().toLowerCase();
+
+        if(x.equals("y")) return true;
+
+        else if(x.equals("n")) return false;
+
+        System.out.println("Invalid inuput given . Please enter 'y'or 'n' ");
+        return trueFalse(sc);
+    }
+
+
+    //triversal
+
+    public void preorder(Node node){
+        if(node == null)
+            return;
+
+        System.out.print(node.value+ " ");
+        preorder(node.left);
+        preorder(node.right);
+
+    }
+
+
+    public static void main(String[] args) {
+        BinaryTree bt = new BinaryTree();
+        Scanner sc = new Scanner(System.in);
+        bt.insert(sc);
+        bt.preorder(bt.root);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+package Trees;
+
 import java.util.*;
 
 public class BinaryTree {
@@ -56,11 +255,13 @@ public class BinaryTree {
 
     // Function to create the tree automatically
     public void createTree() {
-   /*     root =new Node(3);
+   */
+/*     root =new Node(3);
         root.left = new Node(9);
         root.right = new Node(20);
         root.right.left = new Node(15);
-        root.right.right = new Node(7);*/
+        root.right.right = new Node(7);*//*
+
         root = new Node(3);
         root.left = new Node(4);
         root.right = new Node(8);
@@ -77,6 +278,7 @@ public class BinaryTree {
         root.right.right.left = new Node(2);
         root.right.right.left.right = new Node(44);
     }
+*/
 /*
     // Display function
     public void display() {
@@ -90,7 +292,8 @@ public class BinaryTree {
         System.out.println(indent + node.item);
         display(node.left, indent + "\t");
         display(node.right, indent + "\t");
-    }*/
+    }*//*
+
 
 
     // Display function
@@ -290,6 +493,7 @@ public class BinaryTree {
 
 
 
+*/
 /*
         //findsuccessor
         Node successor = bt.findSuccessor(bt.getRoot(), 14);
@@ -298,8 +502,9 @@ public class BinaryTree {
         } else {
             System.out.println("\nNo successor found.");
         }
-*/
+*//*
+
 
 
     }
-}
+}*/
