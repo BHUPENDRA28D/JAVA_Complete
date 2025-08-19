@@ -12,15 +12,16 @@ public class BSTDemo{
         System.out.println(binarySearchTree.isEmpty());
 
 //        binarySearchTree.insert();
-        binarySearchTree.insertByIteration(binarySearchTree.root, 10);
-        binarySearchTree.insertByIteration(binarySearchTree.root, 5);
-        binarySearchTree.insertByIteration(binarySearchTree.root, 2);
-        binarySearchTree.insertByIteration(binarySearchTree.root, 7 );
-        binarySearchTree.insertByIteration(binarySearchTree.root, 3);
-        binarySearchTree.insertByIteration(binarySearchTree.root, 15);
-        binarySearchTree.insertByIteration(binarySearchTree.root, 20);
+        binarySearchTree.insertByIteration( 10);
+        binarySearchTree.insertByIteration( 5);
+        binarySearchTree.insertByIteration( 2);
+        binarySearchTree.insertByIteration( 7 );
+        binarySearchTree.insertByIteration( 3);
+        binarySearchTree.insertByIteration( 15);
+        binarySearchTree.insertByIteration( 20);
         binarySearchTree.preOrder(binarySearchTree.root);
         System.out.println("\n");
+
 //        BinarySearchTree.Node found = binarySearchTree.search(binarySearchTree.root, 5);
 //        System.out.println(
 //                (found !=null)
@@ -28,7 +29,8 @@ public class BSTDemo{
 //                :"Node not found"
 //        ) ;
 
-
+      binarySearchTree.maxNode(binarySearchTree.root);
+      binarySearchTree.minNode(binarySearchTree.root);
     }
 
 
@@ -36,7 +38,7 @@ public class BSTDemo{
 
  class BinarySearchTree {
 
-     public class Node {
+     public static class  Node {
          int item;
          Node left, right;
          private int height;
@@ -118,7 +120,7 @@ public class BSTDemo{
          return node;
      }
 
-     // height of anyRandomeNode
+     // height of any Random Node
      public void anyNodeHeight(Node n ,int data){
          if (n == null) {
              return;  // base case
@@ -146,36 +148,72 @@ public class BSTDemo{
      }
 
 
+     //balanced or not
+     public boolean balancedOrNot(){
+         return balanced(root);
+     }
+     private boolean balanced(Node node){
+         if(node == null)
+             return true;
+
+         return Math.abs(height(node.left)-height(node.right)) <= 1 && balanced(node.left) && balanced(node.right);
+     }
+
+
      // Insertion by Iteration
-     public Node insertByIteration(Node root , int data){
+     public void insertByIteration(int data) {
          Node newNode = new Node(data);
 
-         if(root == null)
-             return newNode;
-
-         Node current =  root;
-         Node parent =null;
-
-         while (current!=null){
-             parent =current;
-
-             if(data <current.item)
-                 current = current.left;
-             else if(data >current.item)
-                 current =current.right;
-             else {
-                 System.out.println("Duplicate value not allowed..");
-                 return root;
-             }
-
+         if (root == null) {
+             root = newNode;   // directly set tree root
+             return;
          }
 
-         if(parent.item > data)
-              parent.left = newNode;
+         Node current = root;
+         Node parent = null;
+
+         while (current != null) {
+             parent = current;
+             if (data < current.item) {
+                 current = current.left;
+             } else if (data > current.item) {
+                 current = current.right;
+             } else {
+                 System.out.println("Duplicate value not allowed..");
+                 return;
+             }
+         }
+
+         if (data < parent.item)
+             parent.left = newNode;
          else
              parent.right = newNode;
+     }
 
 
-         return root;
+
+     // find max value of BST
+     public Node maxNode(Node n){
+         if(n == null)
+             return n;
+         Node temp = n;
+
+         while(temp.right !=null)
+             temp =temp.right;
+
+         System.out.println("Max value is "+temp.item);
+         return  temp;
+     }
+
+     public Node minNode(Node n){
+         if(n == null)
+             return n;
+         Node temp = n;
+
+         while(temp.left !=null)
+             temp =temp.left;
+
+         System.out.println("Minmum value is "+temp.item);
+         return  temp;
      }
  }
