@@ -11,15 +11,24 @@ public class BSTDemo{
         System.out.println( binarySearchTree.height(binarySearchTree.root));
         System.out.println(binarySearchTree.isEmpty());
 
-        binarySearchTree.insert();
+//        binarySearchTree.insert();
+        binarySearchTree.insertByIteration(binarySearchTree.root, 10);
+        binarySearchTree.insertByIteration(binarySearchTree.root, 5);
+        binarySearchTree.insertByIteration(binarySearchTree.root, 2);
+        binarySearchTree.insertByIteration(binarySearchTree.root, 7 );
+        binarySearchTree.insertByIteration(binarySearchTree.root, 3);
+        binarySearchTree.insertByIteration(binarySearchTree.root, 15);
+        binarySearchTree.insertByIteration(binarySearchTree.root, 20);
         binarySearchTree.preOrder(binarySearchTree.root);
         System.out.println("\n");
-        BinarySearchTree.Node found = binarySearchTree.search(binarySearchTree.root, 5);
-        System.out.println(
-                (found !=null)
-                ?"Height of node "+found.item+" = "+binarySearchTree.height(found)
-                :"Node not found"
-        ) ;
+//        BinarySearchTree.Node found = binarySearchTree.search(binarySearchTree.root, 5);
+//        System.out.println(
+//                (found !=null)
+//                ?"Height of node "+found.item+" = "+binarySearchTree.height(found)
+//                :"Node not found"
+//        ) ;
+
+
     }
 
 
@@ -109,6 +118,21 @@ public class BSTDemo{
          return node;
      }
 
+     // height of anyRandomeNode
+     public void anyNodeHeight(Node n ,int data){
+         if (n == null) {
+             return;  // base case
+         }
+
+         if (n.item == data) {
+             System.out.println("Height of " + n.item + " = " + n.height);
+             return;
+         }
+
+         anyNodeHeight(n.left, data);
+         anyNodeHeight(n.right, data);
+     }
+
 
      //search of any node
 
@@ -116,11 +140,42 @@ public class BSTDemo{
          if(n == null || n.item == data)
              return n;
 
-         if(data < n.item)
-            return search(n.left,data);
-
-         else
-          return search(n.right,data);
+        return  (data < n.item)
+           ?  search(n.left,data)
+           : search(n.right,data);
      }
 
+
+     // Insertion by Iteration
+     public Node insertByIteration(Node root , int data){
+         Node newNode = new Node(data);
+
+         if(root == null)
+             return newNode;
+
+         Node current =  root;
+         Node parent =null;
+
+         while (current!=null){
+             parent =current;
+
+             if(data <current.item)
+                 current = current.left;
+             else if(data >current.item)
+                 current =current.right;
+             else {
+                 System.out.println("Duplicate value not allowed..");
+                 return root;
+             }
+
+         }
+
+         if(parent.item > data)
+              parent.left = newNode;
+         else
+             parent.right = newNode;
+
+
+         return root;
+     }
  }
