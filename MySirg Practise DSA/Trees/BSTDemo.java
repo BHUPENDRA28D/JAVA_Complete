@@ -6,31 +6,36 @@ public class BSTDemo{
 
     public static void main(String[] args){
 
-        BinarySearchTree binarySearchTree = new BinarySearchTree();
+        BinarySearchTree bst = new BinarySearchTree();
 
-        System.out.println( binarySearchTree.height(binarySearchTree.root));
-        System.out.println(binarySearchTree.isEmpty());
+        System.out.println( bst.height(bst.root));
+        System.out.println(bst.isEmpty());
 
-//        binarySearchTree.insert();
-        binarySearchTree.insertByIteration( 10);
-        binarySearchTree.insertByIteration( 5);
-        binarySearchTree.insertByIteration( 2);
-        binarySearchTree.insertByIteration( 7 );
-        binarySearchTree.insertByIteration( 3);
-        binarySearchTree.insertByIteration( 15);
-        binarySearchTree.insertByIteration( 20);
-        binarySearchTree.preOrder(binarySearchTree.root);
+//        bst.insert();
+        bst.insertByIteration( 10);
+        bst.insertByIteration( 5);
+        bst.insertByIteration( 2);
+        bst.insertByIteration( 7 );
+        bst.insertByIteration( 3);
+        bst.insertByIteration( 15);
+        bst.insertByIteration( 20);
+        bst.preOrder(bst.root);
         System.out.println("\n");
 
-//        BinarySearchTree.Node found = binarySearchTree.search(binarySearchTree.root, 5);
+
+
+//        BinarySearchTree.Node found = bst.search(bst.root, 5);
 //        System.out.println(
 //                (found !=null)
-//                ?"Height of node "+found.item+" = "+binarySearchTree.height(found)
+//                ?"Height of node "+found.item+" = "+bst.height(found)
 //                :"Node not found"
 //        ) ;
 
-      binarySearchTree.maxNode(binarySearchTree.root);
-      binarySearchTree.minNode(binarySearchTree.root);
+      bst.maxNode(bst.root);
+      bst.minNode(bst.root);
+
+        System.out.println(bst.deletion(bst.root,2));
+        bst.preOrder(bst.root);
     }
 
 
@@ -196,24 +201,88 @@ public class BSTDemo{
      public Node maxNode(Node n){
          if(n == null)
              return n;
-         Node temp = n;
 
-         while(temp.right !=null)
-             temp =temp.right;
+         while(n.right !=null)
+             n =n.right;
 
-         System.out.println("Max value is "+temp.item);
-         return  temp;
+         System.out.println("Max value is "+n.item);
+         return  n;
      }
 
+// find  minmum node .
      public Node minNode(Node n){
          if(n == null)
              return n;
-         Node temp = n;
 
-         while(temp.left !=null)
-             temp =temp.left;
 
-         System.out.println("Minmum value is "+temp.item);
-         return  temp;
+         while(n.left !=null)
+             n =n.left;
+
+         System.out.println("Minmum value is "+n.item);
+         return  n;
      }
+
+     // deletion or items in bst
+
+     public Node deletion(Node n ,int data){
+         if(n == null)
+             return null;
+
+         Node current =n;
+         Node parent =null;
+
+         while(current !=null && current.item!=data){
+             parent=current;
+             current=  (data< current.item)?current.left:current.right;
+         }
+
+         if(current == null){
+             System.out.println("Node Not found");
+             return n;
+         }
+
+         // 🔹 Case 1: No child (leaf)
+         if (current.left == null && current.right == null) {
+
+            if(parent == null) return null;
+            if(parent.left ==current) parent.left=null;
+            else parent.right =null;
+         }
+
+         // * Case 2 Node with only one child.
+
+         else if(current.left==null ||current.right == null){
+
+             Node child = (current.left!=null )?current.left : current.right;
+
+             if (parent ==null) return null;
+             else if(parent.left==current) parent.left =child;
+             else parent.right =child;
+         }
+
+
+         // Case 3 Node with 2  childs
+         else{
+             Node succsorParent = current;
+             Node succsor = current.right;
+
+             while(succsor.left !=null){
+                 succsorParent=succsor;
+                 succsor = succsor.left;
+
+             }
+
+             current.item =succsor.item;
+
+             if (succsorParent.left == succsor) {
+                 succsorParent.left = succsor.right;   // successor can only have right child
+             } else {
+                 succsorParent.right = succsor.right;
+             }
+
+         }
+
+       return  n;
+     }
+
  }
