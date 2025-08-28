@@ -22,6 +22,7 @@ public class BSTDemo{
         bst.preOrder(bst.root);
         System.out.println("\n");
 
+        bst.display();
 
 
 //        BinarySearchTree.Node found = bst.search(bst.root, 5);
@@ -34,8 +35,12 @@ public class BSTDemo{
       bst.maxNode(bst.root);
       bst.minNode(bst.root);
 
-        System.out.println(bst.deletion(bst.root,2));
+//        System.out.println(bst.deletionByIteration(bst.root,2));
+        bst.delete(2);
+        bst.delete(20);
         bst.preOrder(bst.root);
+        bst.display();
+
     }
 
 
@@ -84,6 +89,27 @@ public class BSTDemo{
          preOrder(node.left);
          preOrder(node.right);
      }
+     //Display method
+     public void display() { System.out.println("\n\n\n");
+         printTree(root, 0);
+     }
+
+     private void printTree(Node node, int level) {
+         if (node == null) {
+             return;
+         }
+
+         printTree(node.right, level + 1);
+         if (level != 0) {
+             for (int i = 0; i < level - 1; i++)
+                 System.out.print("|\t");
+             System.out.println("|-------" + node.item);
+         } else
+             System.out.println(node.item);
+         printTree(node.left, level + 1);
+
+     }
+
 
      // insertion
      public void insert() {
@@ -224,7 +250,7 @@ public class BSTDemo{
 
      // deletion or items in bst
 
-     public Node deletion(Node n ,int data){
+     public Node deletionByIteration(Node n ,int data){
          if(n == null)
              return null;
 
@@ -284,5 +310,43 @@ public class BSTDemo{
 
        return  n;
      }
+
+     public void delete(int data){
+         root =delete(root,data);
+     }
+     private Node delete(Node root, int data) {
+         if (root == null) return null;
+
+         if (data < root.item) {
+             root.left = delete(root.left, data);
+         }
+         else if (data > root.item) {
+             root.right = delete(root.right, data);
+         }
+         else {
+             // Found node to delete
+
+             // Case 1: No child
+             if (root.left == null && root.right == null) {
+                 return null;
+             }
+
+             // Case 2: One child
+             else if (root.left == null) {
+                 return root.right;
+             }
+             else if (root.right == null) {
+                 return root.left;
+             }
+
+             // Case 3: Two children
+             Node successor = minNode(root.right);
+             root.item = successor.item;  // replace value
+             root.right = delete(root.right, successor.item); // delete successor
+         }
+         return root;
+     }
+
+
 
  }
