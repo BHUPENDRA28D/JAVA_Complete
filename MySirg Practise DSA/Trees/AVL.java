@@ -17,76 +17,87 @@ public class AVL {
 
     Node root;
 
-    // Get height of a node
-    public int getHeight(Node n) {
-        return (n == null) ? -1 : n.height;
+    //is empty
+    public boolean isEmpty(){
+        return  (root == null);
+    }
+    //height.
+    public int getHeight(Node node){
+        return (node == null) ?-1 : node.height;
+
     }
 
-    // Check if tree is empty
-    public boolean isEmpty() {
-        return root == null;
+    // get Balance Factor
+
+    public int getBalanceFactor(Node node){
+        return getHeight(node.left)-getHeight(node.right);
     }
 
-    // Get balance factor of a node
-    public int getBalanceFactor(Node n) {
-        return (n == null) ? 0 : getHeight(n.left) - getHeight(n.right);
+    // is Balanced or not
+    public boolean isbalanced(){
+        return isbalanced(root);
+    }
+    private boolean isbalanced(Node node){
+        return (node ==null )?true :  Math.abs(getHeight(node.left) - getHeight(node.right))<=1 && isbalanced(node.right) && isbalanced(node.left);
     }
 
-    // Rotate node to maintain AVL balance
+
+
+    // Rotate the AVL tree.
     public Node rotate(Node node) {
         int balance = getBalanceFactor(node);
 
-        // Left heavy
         if (balance > 1) {
             if (getBalanceFactor(node.left) >= 0) {
-                // Left-Left case
-                return rightRotate(node);
+                return rightRotate(node); // Left Left
             } else {
-                // Left-Right case
-                node.left = leftRotate(node.left);
+                node.left = leftRotate(node.left); // Left Right
                 return rightRotate(node);
             }
         }
 
-        // Right heavy
         if (balance < -1) {
             if (getBalanceFactor(node.right) <= 0) {
-                // Right-Right case
-                return leftRotate(node);
+                return leftRotate(node); // Right Right
             } else {
-                // Right-Left case
-                node.right = rightRotate(node.right);
+                node.right = rightRotate(node.right); // Right Left
                 return leftRotate(node);
             }
         }
 
-        return node; // No rotation needed
+        return node;
     }
 
-    // Right rotation
-    public Node rightRotate(Node parent) {
+
+
+    public Node rightRotate(Node parent){
+
         Node child = parent.left;
-        Node t = child.right;
+        Node temp = child.right;
 
-        child.right = parent;
-        parent.left = t;
+        child.right= parent;
+        parent.left = temp;
 
+        //update heights of node.
         parent.height = Math.max(getHeight(parent.left), getHeight(parent.right)) + 1;
         child.height = Math.max(getHeight(child.left), getHeight(child.right)) + 1;
+
 
         return child;
     }
 
-    // Left rotation
-    public Node leftRotate(Node parent) {
+    public Node leftRotate(Node parent){
+
         Node child = parent.right;
-        Node t = child.left;
+        Node temp = child.left;
 
-        child.left = parent;
-        parent.right = t;
+        child.left= parent;
+        parent.right = temp;
 
+        //update heights of node.
         parent.height = Math.max(getHeight(parent.left), getHeight(parent.right)) + 1;
         child.height = Math.max(getHeight(child.left), getHeight(child.right)) + 1;
+
 
         return child;
     }
@@ -100,24 +111,28 @@ public class AVL {
     }
 
     // Insert a single value into AVL tree
-    private Node insert(Node node, int item) {
-        if (node == null) {
-            return new Node(item);
-        }
 
-        if (item < node.item) {
-            node.left = insert(node.left, item);
-        } else if (item > node.item) {
-            node.right = insert(node.right, item);
-        } else {
-            System.out.println("Duplicate value " + item + " not allowed.");
-            return node;
-        }
+    public Node insert(Node node, int data){
+       Node newNode = new Node(data);
 
-        // Update height and rotate if needed
-        node.height = Math.max(getHeight(node.left), getHeight(node.right)) + 1;
-        return rotate(node);
+       if(node == null){
+           return newNode;
+       }
+
+       if(data < node.item)
+           node.left = insert(node.left,data);
+       else if(data> node.item)
+           node.right = insert(node.right,data);
+       else {
+           System.out.println("Duplicate value are not allowed");
+           return node;
+       }
+
+       node.height = Math.max(getHeight(node.left),getHeight(node.right)+1) ;
+       return rotate(node);
+
     }
+
 
     // Display the tree structure
     public void display() {
@@ -149,4 +164,4 @@ public class AVL {
         System.out.println("\nAVL Tree Structure:");
         avltree.display();
     }
-}-
+}
